@@ -2,6 +2,13 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+	  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 
 <body ng-app="ToDoList">
@@ -13,7 +20,7 @@
 			<li>{{ item }}</li>
 		</div>	
 			<input ng-model="addToDo"> 
-			<button ng-click="addItem()">Add Item to the list</button>
+			<button ng-click="addItem()" type="button" class="btn btn-success">Add Item to the list</button>
 		</input>
 			
 	</div>	
